@@ -1,5 +1,5 @@
 body{
-    font-family: Google Sans, sans-serif;
+    font-family: Google Sans;
     color: #ffffff;
     background-color: #232429;
     display: flex; 
@@ -9,18 +9,109 @@ body{
     height: 100vh
 }
 
+
+
+@font-face {
+    font-family: Google Sans;
+    src: url('assets/fonts/GoogleSans-VariableFont_GRAD,opsz,wght.ttf') format('truetype');
+}
+
+h1{
+    font-family: Google Sans;
+    color: #ffffff;
+    font-size: 96px;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+
 .shortcut{
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
+    font-family: Google Sans;
+    font-size: 15px;
 }
+
+.shortcut > *{
+    margin-left: 15px;
+}
+
+
 
 .vertical_container{
     display: flex;
     flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.vertical_container > * + *{
+    margin-top: 15px;
 }
 
 .horizontal_container{
     display: flex;
     flex-direction: row;
+    justify-content: center; 
+}
+
+.horizontal_container > *{
+    margin-left: 15px;
+}
+
+.button_container{
+    background-color: #303135;
+    color: #ffffff;
+    border:  1px solid #303135;
+    padding: 10px 20px;
+    border-radius: 0.6em;
+    font-family: Google Sans;
+    font-weight: 450;
+    font-size: 15px;
+}
+
+.button_container:hover{
+    border: 1px solid #c6c8c7;
+}
+
+
+a:link{
+    color: #ffffff;
+    text-decoration: none;
+    font: inherit;
+}
+
+a:visited{
+    color: #ffffff;
+    text-decoration: none;
+    font: inherit;
+}
+
+input{
+    display: flex;
+    width: 60vw;
+    height: 4vh;
+    background-color: #4d5055;
+    color: #ffffff;
+    border:  1px solid #4d5055;
+    padding: 10px 20px;
+    border-radius: 4.5vh;
+    font-family: Google Sans;
+    font-weight: 400;
+    font-size: 2vh;
+}
+
+input:focus-visible{
+    background-color: #303135;
+    border:  1px solid #303135;
+    outline:  1px solid #303135;
+    box-shadow: 0 0 5px #232429;
+}
+
+form{
+    display: flex;
+    width: 60vw;
+    justify-content: center; 
 }

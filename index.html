@@ -8,24 +8,26 @@
 
     <body>
 
-        <h1 href="index.html">Google</h1>
-
         <div class="shortcut">
-            <a href="image.html" > Image Search</a>
-            <a href="advanced.html"> Advanced Search</a>
+            <a href="image.html"> Images </a>
+            <a href="advanced.html"> Advanced </a>
         </div>
 
         <div class="vertical_container">
+            <a href="index.html">
+                <h1>Google</h1>
+            </a>
+
             <form action="https://www.google.com/search" method="get" id="search_form">
                 <input type="text" name="q">
             </form>
             
             <div class = "horizontal_container">
-                <button form = "search_form" type="submit">
+                <button form = "search_form" type="submit" class = button_container>
                     Google Search
                 </button>
 
-                <button form = "search_form" type="submit" name="btnI" value="1">
+                <button form = "search_form" type="submit" name="btnI" value="1" class = button_container>
                     I'm Feeling Lucky
                 </button>
             </div>
