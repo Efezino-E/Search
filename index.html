@@ -8,6 +8,8 @@
 
     <body>
 
+        <h1 href="index.html">Google</h1>
+
         <div class="shortcut">
             <a href="image.html" > Image Search</a>
             <a href="advanced.html"> Advanced Search</a>
@@ -16,12 +18,17 @@
         <div class="vertical_container">
             <form action="https://www.google.com/search" method="get" id="search_form">
                 <input type="text" name="q">
-                <input type="submit" value="Google Search">
             </form>
             
-            <button form = "search_form" type="submit" name="btnI" value="1">
-                I'm Feeling Lucky
-            </button>
+            <div class = "horizontal_container">
+                <button form = "search_form" type="submit">
+                    Google Search
+                </button>
+
+                <button form = "search_form" type="submit" name="btnI" value="1">
+                    I'm Feeling Lucky
+                </button>
+            </div>
         </div>
 
     </body>
