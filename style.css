@@ -174,18 +174,23 @@ form{
 }
 
 .primary{
-    background-color: #8fb6fa;
-    color: #232429;
-    border:  1px solid #8fb6fa;
+    background-color: #3e78de;
+    color: #fff;
+    border:  1px solid #3e78de;
     font-weight: 500;
     padding: 13px 20px;
     font-optical-sizing: auto;
 }
 
+.primary:hover{
+    background-color: #5384da;
+    border:  1px solid #5384da;
+}
+
 .primary:focus-visible{
-    background-color: #c2d7f9;
-    border:  1px solid #c2d7f9;
-    outline:  1px solid #c2d7f9;
+    background-color: #5384da;
+    border:  1px solid #5384da;
+    outline:  1px solid #5384da;
     box-shadow: 0 0 0px none;
 }
 
