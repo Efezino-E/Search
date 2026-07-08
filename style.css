@@ -9,8 +9,6 @@ body{
     height: 100vh
 }
 
-
-
 @font-face {
     font-family: Google Sans;
     src: url('assets/fonts/GoogleSans-VariableFont_GRAD,opsz,wght.ttf') format('truetype');
@@ -23,8 +21,6 @@ h1{
     margin: 0;
 }
 
-
-
 .shortcut{
     position: absolute;
     top: 20px;
@@ -32,17 +28,30 @@ h1{
     font-size: 15px;
 }
 
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 15px;
+}
+
 .shortcut > *{
     margin-left: 15px;
 }
-
-
 
 .vertical_container{
     display: flex;
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
+}
+
+.start{
+    align-items: flex-start; 
+}
+
+.end{
+    align-items: flex-end;
 }
 
 .vertical_container > * + *{
@@ -52,7 +61,24 @@ h1{
 .horizontal_container{
     display: flex;
     flex-direction: row;
-    justify-content: center; 
+    justify-content: center;
+    align-items: center;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.parent-width{
+    width: 100%;
+}
+
+.parent-width-65{
+    width: 65%;
+}
+
+.parent-width-20{
+    width: 20%;
 }
 
 .horizontal_container > * + *{
@@ -73,12 +99,10 @@ h1{
     border: 1px solid #c6c8c7;
 }
 
-
 a:link{
     color: #ffffff;
     text-decoration: none;
     font: inherit;
-    margin: 0;
 }
 
 a:visited{
@@ -100,11 +124,28 @@ input{
     font-size: 2vh;
 }
 
+.clean{
+    width: 40vw;
+    height: 4vh;
+    background-color: #232429;
+    color: #9c9ea2;
+    border:  1px solid #9c9ea2;
+    padding: 10px 20px;
+    border-radius: 0.5vh;
+}
+
 input:focus-visible{
     background-color: #303135;
     border:  1px solid #303135;
     outline:  1px solid #303135;
     box-shadow: 0 0 5px #232429;
+}
+
+.clean:focus-visible{
+    background-color: #232429;
+    border:  1px solid #5096ff;
+    outline:  1px solid #5096ff;
+    box-shadow: 0 0 0px none;
 }
 
 form{
@@ -126,4 +167,52 @@ form{
 
 .clean_overlay > * + *{
     margin-left: -65px;
+}
+
+.rounded{
+    border-radius: 1.5em;
+}
+
+.primary{
+    background-color: #8fb6fa;
+    color: #232429;
+    border:  1px solid #8fb6fa;
+    font-weight: 500;
+    padding: 13px 20px;
+    font-optical-sizing: auto;
+}
+
+.primary:focus-visible{
+    background-color: #c2d7f9;
+    border:  1px solid #c2d7f9;
+    outline:  1px solid #c2d7f9;
+    box-shadow: 0 0 0px none;
+}
+
+.margin-top{
+    margin-top: 40px;
+}
+
+.margin-bottom{
+    margin-bottom: 20px;
+}
+
+.grey{
+    color: #9c9ea2;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5;
+}
+
+.size-30{
+    font-size: 30px;
 }
